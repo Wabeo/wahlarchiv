@@ -13,6 +13,23 @@ Sie müssen uns nicht glauben. Sie können nachrechnen.
     MANIFEST.jsonl              ein Eintrag je Abruf, mit Fingerabdruck
     ANKER.txt                   Fingerabdrücke über das gesamte Manifest
 
+## Eine Datei öffnen
+
+Die Endung `.gz` heißt: Die Datei ist gepackt. Darin liegt die Datei der
+Wahlleitung, unverändert.
+
+- **Windows 11**, aktueller Stand: Doppelklick. Die Datei öffnet sich wie ein
+  Ordner, darin liegt die eigentliche Datei. Oder Rechtsklick und
+  „Alle extrahieren“.
+- **Windows 10**: mit einem Packprogramm, etwa dem kostenlosen 7-Zip.
+  Rechtsklick, „7-Zip“, „Hier entpacken“.
+- **Mac**: Doppelklick.
+- **Linux und Kommandozeile**: `gunzip -k DATEI.csv.gz`
+
+Für Excel: Zeigt es nach einem Doppelklick auf die entpackte CSV-Datei
+zerstückelte Umlaute, die Datei stattdessen über „Daten“ und „Aus Text/CSV“
+öffnen und als Dateiursprung UTF-8 wählen.
+
 ## Eine einzelne Datei prüfen
 
 Der Fingerabdruck bezieht sich auf den **entpackten** Inhalt, also auf genau
